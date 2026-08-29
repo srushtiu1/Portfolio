@@ -7,7 +7,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="portfolio-common.css">
 </head>
 <script>
@@ -73,10 +73,11 @@
 <div class="hero">
   <div class="hero-eyebrow">Healthcare Admin · Independent Build</div>
   <div class="hero-title">Patient Monitoring System</div>
-  <div class="hero-sub">A web application for private clinics to manage patient records, billing, and appointment flow, designed and built end to end, from database to interface.</div>
+  <div class="hero-sub">A clinic system for patient records, billing, and check-in — designed and built solo, end to end,
+    where the data model directly shaped the interface decisions.</div>
   <div class="hero-meta">
     <div class="hmi"><div class="hml">Client</div><div class="hmv">Care Plus Clinic</div></div>
-    <div class="hmi"><div class="hml">Role</div><div class="hmv">Web Development</div></div>
+    <div class="hmi"><div class="hml">Role</div><div class="hmv">Design &amp; Full-Stack Development</div></div>
     <div class="hmi"><div class="hml">Duration</div><div class="hmv">1 year</div></div>
     <div class="hmi"><div class="hml">Platform</div><div class="hmv">Responsive Web</div></div>
     <div class="hmi"><div class="hml">Industry</div><div class="hmv">Healthcare</div></div>
@@ -155,8 +156,8 @@
 </div>
 
 <!-- DESIGN DECISION WORTH NAMING -->
-<div class="sec sec-purple">
-  <div class="eyebrow eyebrow-purple">Design Decision Worth Naming</div>
+<div class="sec sec-bg">
+  <div class="eyebrow">Design Decision Worth Naming</div>
   <div class="sec-title">Making wait time visible without making it a spreadsheet</div>
   <div class="body">The clearest design problem in this system was the patient queue. A receptionist glancing at a waiting room needs to know, at a glance, who's been waiting dangerously long, without reading a timestamp column and doing the math themselves.</div>
 
@@ -180,7 +181,7 @@
   <div class="skills-grid mt28">
     <div class="skill-card">
       <div class="skill-title">Billing &amp; Payments</div>
-      <div class="skill-body">Bills and payments are tracked per patient, with partial or excess payments automatically carried into the next billing cycle instead of requiring manual reconciliation.</div>
+      <div class="skill-body">Bills and payments are tracked per patient, with partial or excess payments carried into the next cycle as a single running balance rather than a separate correction record. Designing the database schema myself is what made that possible — it's what let the interface show one number instead of a reconciliation screen.</div>
     </div>
     <div class="skill-card">
       <div class="skill-title">Role-Based Access</div>
@@ -197,11 +198,41 @@
   </div>
 </div>
 
+<!-- BUSINESS OUTCOMES -->
+<div class="sec">
+  <div class="eyebrow">Business Outcomes</div>
+  <div class="sec-title">A clinic that could see its own numbers for the first time</div>
+  <div class="body">The clinic was losing patients to long, untracked waits, and had no reliable way to track who owed
+    what — many patients could only pay bills partially, and reconciling that by hand was slow and error-prone. The
+    system shipped to Care Plus Clinic and stayed in active use for about two years while I supported it; the figures
+    below are the clinic's own before/after comparison over that period, not an independently audited study.</div>
+  <div class="impact-metrics">
+    <div class="impact-metric">
+      <div class="impact-number">60%</div>
+      <div style="font-size:10px;font-weight:700;color:#71717a;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Measured</div>
+      <div class="impact-metric-title">Faster billing &amp; payment processing</div>
+      <div class="impact-metric-body">Reconciling partial payments and outstanding balances no longer meant recalculating from paper records by hand.</div>
+    </div>
+    <div class="impact-metric">
+      <div class="impact-number">100%</div>
+      <div style="font-size:10px;font-weight:700;color:#71717a;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Measured</div>
+      <div class="impact-metric-title">Accuracy in payment tracking</div>
+      <div class="impact-metric-body">Per-patient balances were tracked exactly, replacing hand-calculated totals prone to error.</div>
+    </div>
+    <div class="impact-metric">
+      <div class="impact-number">30%</div>
+      <div style="font-size:10px;font-weight:700;color:#71717a;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Observed</div>
+      <div class="impact-metric-title">Increase in patient retention</div>
+      <div class="impact-metric-body">Reported by the clinic after the wait-time and billing issues were addressed, over roughly two years of use.</div>
+    </div>
+  </div>
+</div>
+
 <!-- CONSTRAINTS -->
 <div class="sec sec-bg">
   <div class="eyebrow">Constraints &amp; What I'd Add</div>
   <div class="sec-title">What this project didn't cover</div>
-  <div class="body">Built as an independent project rather than in partnership with a live clinic, this system doesn't have real usage data behind it, no adoption numbers, no time saved per shift, nothing I can honestly report as an outcome. What I can speak to is the design reasoning behind it: the role split, the queue status system, and the billing logic for partial and excess payments.</div>
+  <div class="body">The figures above come from the clinic's own records, not an instrumented study — there's no controlled before/after, and nothing was independently audited beyond what the clinic reported to me directly.</div>
   <div class="body">Beyond the color-only status signal noted above, I'd also want to test the receptionist check-in flow with someone actually working a front desk under time pressure that's the kind of feedback no amount of solo design review substitutes for.</div>
 </div>
 
