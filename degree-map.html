@@ -7,7 +7,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="portfolio-common.css">
 <style>
   .wireframe-block {
@@ -630,9 +630,9 @@
 
   <div class="hero">
     <div class="hero-eyebrow">Interaction Design · EdTech · Web</div>
-    <div class="hero-title">Degree Map: From engineering solution to student experience</div>
-    <div class="hero-sub">A degree planning tool redesigned around how students actually plan, understand requirements,
-      and work with advisors.</div>
+    <div class="hero-title">Degree Map: Redesigning a working system students needed a tutorial to use</div>
+    <div class="hero-sub">A degree planning tool used by 2,000+ students each semester at Boston University — rebuilt
+      so the interface explains its own rules instead of requiring documentation.</div>
     <div class="hero-meta">
       <div class="hmi">
         <div class="hml">Company</div>
@@ -666,16 +666,12 @@
   <div class="sec">
     <div class="eyebrow">Overview</div>
     <div class="sec-title">The product worked. The interaction model didn't.</div>
-    <div class="body">Degree Map started as an engineering solution for students planning a four-year degree, tracking
-      requirements, organizing semesters, and sharing plans with advisors. The system logic worked, and students used
-      it. But the interface expected students to understand the system before they could use it confidently.</div>
-    <div class="body">Over five years, I wore two hats: developer and de facto product owner. I built and maintained the
-      system while staying close to how students actually used it. That long-term exposure revealed interaction failures
-      that could not be solved through implementation alone.</div>
+    <div class="body">Degree Map began as an engineering build to track requirements and organize semesters. It
+      worked, but assumed students already understood the system. Over five years as both developer and de facto
+      owner, I stayed close enough to usage to tell interaction failures from implementation ones.</div>
     <div class="pullquote">
-      <div class="pullquote-text">The redesign was not about making a working product look better. It was about making
-        the system's rules, states, and next actions understandable without requiring students to learn the product
-        first.</div>
+      <div class="pullquote-text">This wasn't about making the product look better — it was making the system
+        understandable without requiring students to learn it first.</div>
     </div>
   </div>
 
@@ -689,8 +685,8 @@
             <path d="M12 7v5l3 2"></path>
           </svg></div>
         <div class="skill-title">Product & Interaction Direction</div>
-        <div class="skill-body">Identifying recurring interaction failures from long-term product exposure and turning
-          them into prioritized design decisions.</div>
+        <div class="skill-body">Turning recurring interaction failures, surfaced through long-term exposure, into
+          prioritized decisions.</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -698,16 +694,16 @@
             <path d="M3 9h18M9 21V9"></path>
           </svg></div>
         <div class="skill-title">Information Architecture</div>
-        <div class="skill-body">Restructuring semesters, requirements, progress, and planning actions so students could
-          understand their current state at a glance.</div>
+        <div class="skill-body">Restructuring semesters, requirements, and progress so students see their current state
+          at a glance.</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg></div>
         <div class="skill-title">Interaction System & Logic</div>
-        <div class="skill-body">Making prerequisite rules, semester states, saving behavior, and drag-and-drop
-          constraints visible through the interface.</div>
+        <div class="skill-body">Making prerequisite rules, semester states, and drag-and-drop constraints visible
+          through the interface.</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -715,8 +711,7 @@
             <path d="M8 12l2.5 2.5L16 9"></path>
           </svg></div>
         <div class="skill-title">Accessibility & Implementation</div>
-        <div class="skill-body">Designing non-color-only states and working within the existing technical system to
-          carry the interaction decisions into the product.</div>
+        <div class="skill-body">Designing non-color-only states within the existing technical system.</div>
       </div>
     </div>
   </div>
@@ -724,12 +719,9 @@
   <div class="sec">
     <div class="eyebrow">The Existing Experience</div>
     <div class="sec-title">Students had to figure out too much for themselves</div>
-    <div class="body">Version 1 was built for correctness, not communication. Prerequisite validation, semester locking,
-      requirement mapping, and advisor visibility existed in the system but the interface did not explain those rules
-      when students encountered them.</div>
-    <div class="body">Students needed instructions to get started, and a video tutorial was added later. Those were not
-      really support features; they were evidence that the interaction model was asking users to learn the system before
-      using it.</div>
+    <div class="body">Version 1 was built for correctness, not communication — prerequisite rules, locking, and
+      mapping existed, but the interface never explained them when students hit them. Instructions and a video
+      tutorial followed — evidence the model asked students to learn the system before using it.</div>
     <div class="wireframe-block">
       <div class="wireframe-label">Version 1 — Interaction failures identified</div>
       <div class="wireframe-img"><img src="degreewireframe.png"
@@ -737,22 +729,22 @@
       <div class="annotation-grid">
         <div class="annotation-item">
           <div class="ann-dot"></div>
-          <div class="ann-text"><strong>No clear starting point</strong>The instructions line was needed just to get
-            students started.</div>
+          <div class="ann-text"><strong>No clear starting point</strong>Instructions were needed just to get students
+            started.</div>
         </div>
         <div class="annotation-item">
           <div class="ann-dot"></div>
           <div class="ann-text"><strong>No semester state language</strong>Completed and upcoming semesters looked too
-            similar to orient users.</div>
+            similar.</div>
         </div>
         <div class="annotation-item">
           <div class="ann-dot"></div>
-          <div class="ann-text"><strong>Empty slots lacked guidance</strong>Blank “+ Add Course” areas did not
-            communicate what to do next.</div>
+          <div class="ann-text"><strong>Empty slots lacked guidance</strong>Blank “+ Add Course” areas didn't say what
+            to do next.</div>
         </div>
         <div class="annotation-item">
           <div class="ann-dot"></div>
-          <div class="ann-text"><strong>Planning and requirements were disconnected</strong>The two areas did not
+          <div class="ann-text"><strong>Planning and requirements were disconnected</strong>The two areas didn't
             visually reinforce each other.</div>
         </div>
         <div class="annotation-item">
@@ -762,8 +754,8 @@
         </div>
         <div class="annotation-item">
           <div class="ann-dot"></div>
-          <div class="ann-text"><strong>Color carried too much meaning</strong>Some requirement categories relied on
-            color without equivalent text signals.</div>
+          <div class="ann-text"><strong>Color carried too much meaning</strong>Some categories relied on color
+            without text signals.</div>
         </div>
       </div>
     </div>
@@ -790,11 +782,9 @@
       <div>
         <div class="eyebrow">The Users</div>
         <div class="sec-title">Students navigating a consequential decision with limited product familiarity</div>
-        <div class="body">Students were not frequent users of the planning system. They needed to understand progress,
-          know what they could and could not do, trust that their work was saved, and share their plan with an advisor
-          without extra steps.</div>
-        <div class="body">Those needs became the lens for the interaction model rather than a separate checklist at the
-          end of the process.</div>
+        <div class="body">Students used the planner infrequently — they needed progress at a glance, trust their
+          work was saved, and to share plans with advisors without extra steps, shaping the interaction model
+          directly.</div>
       </div>
       <div class="user-needs">
         <div class="need-card">
@@ -833,8 +823,8 @@
   <div class="sec">
     <div class="eyebrow">Interaction System</div>
     <div class="sec-title">Make system rules visible instead of making students learn them</div>
-    <div class="body">The redesign treats system constraints as part of the interaction model. A rule is useful to a
-      student only when the interface communicates what it means, when it matters, and what to do next.</div>
+    <div class="body">The redesign treats system constraints as part of the interaction model — a rule only helps when
+      the interface explains what it means, when it matters, and what to do next.</div>
     <div class="arch-flow mt28">
       <div class="arch-node">
         <div class="arch-number">01</div>
@@ -873,6 +863,14 @@
     </div>
   </div>
 
+  <div class="sec">
+    <div class="eyebrow">Design System</div>
+    <div class="sec-title">A small token system, not a one-off skin</div>
+    <div class="body">Course categories, semester states, and status feedback share the same base tokens — four
+      category colors, zinc-tint grouping, and a type/spacing scale built on shadcn/ui — so new states need no new
+      visual language.</div>
+  </div>
+
   <div class="sec sec-bg">
     <div class="eyebrow">Key Interaction Decisions</div>
     <div class="sec-title">Five decisions that closed the gap between Version 1 and what students needed</div>
@@ -881,9 +879,8 @@
         <div>
           <div class="feat-eye">Decision 01</div>
           <div class="feat-title">Semester states communicate without explanation</div>
-          <div class="feat-body">Completed semesters, upcoming semesters, and active empty states needed to look and
-            behave differently. We introduced explicit states so students could orient themselves in their degree
-            without having to decode the interface.</div>
+          <div class="feat-body">Completed, upcoming, and empty semesters needed distinct states, so students could
+            orient themselves without decoding the interface.</div>
         </div>
         <div class="mt28">
           <div class="three-col">
@@ -923,10 +920,9 @@
         <div>
           <div class="feat-eye">Decision 02</div>
           <div class="feat-title">Auto-save removes anxiety without removing trust</div>
-          <div class="feat-body">Students regularly switched browser tabs while planning and sometimes lost work because
-            saving was manual. Removing the Save button eliminated the need to remember. A persistent Auto-Saved
-            indicator and action-specific toast notifications replaced it with two forms of confirmation: background
-            confidence and immediate feedback.</div>
+          <div class="feat-body">Students often lost work switching tabs because saving was manual — removing the
+            Save button fixed that. Having built the save endpoint myself, I knew a write could fail silently on a bad
+            connection, so the toast had to confirm the save, not just fire on click.</div>
         </div>
         <div class="mt28">
           <div class="feat-img" style="width:100%; ">
@@ -948,9 +944,8 @@
         <div>
           <div class="feat-eye">Decision 03</div>
           <div class="feat-title">The empty state replaces the tutorial</div>
-          <div class="feat-body">The empty state shows what students are working toward, explains the workflow before
-            the first action, and gives one unmistakable starting point. When a year is added, its Fall and Spring
-            semesters appear automatically so students do not have to construct the planning structure themselves.</div>
+          <div class="feat-body">The empty state shows what students are working toward and gives one clear starting
+            point. Adding a year auto-creates its Fall and Spring semesters.</div>
         </div>
         <div class="mt28">
           <div class="real-img decision-image">
@@ -964,9 +959,9 @@
         <div>
           <div class="feat-eye">Decision 04</div>
           <div class="feat-title">Drag and drop with system awareness</div>
-          <div class="feat-body">The redesign surfaces constraints when they become relevant. Valid drop zones
-            highlight. Invalid drops are rejected with a specific explanation, such as a prerequisite that must be
-            completed first. The system moves from simply blocking an action to explaining the next step.</div>
+          <div class="feat-body">Constraints surface only when relevant: valid zones highlight, invalid drops get a
+            specific reason, like a missing prerequisite. That logic already existed on the backend — the work was
+            exposing it, not leaving students to guess.</div>
         </div>
         <div class="mt28">
           <div class="two-col">
@@ -1022,11 +1017,9 @@
       <div>
         <div class="eyebrow">Accessibility</div>
         <div class="sec-title">A constraint from the beginning, not the end</div>
-        <div class="body">Version 1 used color as the only signal for some category differentiation. Working alongside
-          team members and stakeholders with color vision differences made us examine every instance where color was
-          carrying information alone.</div>
-        <div class="body"><strong style="color:#111">The rule:</strong> remove any color from the interface and the
-          important state should still be readable.</div>
+        <div class="body">Version 1 leaned on color alone for some categories — working alongside teammates and
+          stakeholders with color vision differences pushed us to check every color-only instance.
+          <strong style="color:#111">The rule:</strong> remove any color and the state should still read clearly.</div>
         <div class="acc-grid">
           <div class="acc-card">
             <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1069,10 +1062,7 @@
           <div class="acc-improve-title">What we would improve next</div>
           <div class="acc-improve-list">
             <div class="acc-improve-item">
-              <div class="acc-dot"></div>Full WCAG 2.1 AA contrast audit on all accent colors
-            </div>
-            <div class="acc-improve-item">
-              <div class="acc-dot"></div>Unique icon shapes per requirement category
+              <div class="acc-dot"></div>Full WCAG 2.1 AA contrast audit
             </div>
             <div class="acc-improve-item">
               <div class="acc-dot"></div>Testing with assistive technology and a color blindness simulator
@@ -1084,11 +1074,22 @@
    
   </div>
 
+  <div class="sec">
+    <div class="eyebrow">Constraints &amp; Trade-offs</div>
+    <div class="sec-title">What shaped these decisions, and what's missing</div>
+    <div class="body">Most of this was carried out alone, within a legacy system I couldn't fully rebuild — exposing
+      existing logic rather than rewriting it was shaped by that constraint. Failures came from support requests,
+      advisor feedback, and direct observation, not structured usability testing.</div>
+    <div class="body">Usage, adoption, and bug-report volume below are real, tracked before and after. What's missing
+      is a formal usability metric like task completion time — the closest thing to a controlled comparison is the
+      bug-report drop.</div>
+  </div>
+
   <div class="sec sec-purple">
     <div class="eyebrow eyebrow-purple">What I Learned</div>
     <div class="sec-title">Observations became design priorities</div>
-    <div class="body">Rather than treating each issue as an isolated bug, I grouped the recurring problems by what they
-      revealed about the experience. Each observation led directly to a design response.</div>
+    <div class="body">Rather than treat each issue as an isolated bug, I grouped recurring problems by what they
+      revealed — each observation led directly to a design response.</div>
     <div class="goal-grid">
       <div class="goal-card"><span class="goal-num">01</span>
         <div>
@@ -1100,14 +1101,14 @@
       <div class="goal-card"><span class="goal-num">02</span>
         <div>
           <div class="goal-title">System rules were invisible</div>
-          <div class="goal-body">Locked semesters, prerequisites, and save behavior existed in the system but were not
-            visible at the moment users needed them.</div>
+          <div class="goal-body">Locked semesters, prerequisites, and save behavior existed, but weren't visible when
+            students needed them.</div>
         </div>
       </div>
       <div class="goal-card"><span class="goal-num">03</span>
         <div>
           <div class="goal-title">Students were not power users</div>
-          <div class="goal-body">They opened the tool only a handful of times per semester, often under stress. The
+          <div class="goal-body">They opened the tool only a few times per semester, often under stress — the
             interface needed to explain itself.</div>
         </div>
       </div>
@@ -1145,24 +1146,28 @@
   <div class="sec">
     <div class="eyebrow">Outcomes</div>
     <div class="sec-title">The strongest signal was behavior change</div>
+    <div class="body">Before this, students planned on paper and met advisors in person to catch errors. One shared,
+      validated system removed most of that friction — no comparable tool existed then, part of why faculty adoption
+      was strong.</div>
     <div class="impact-metrics">
       <div class="impact-metric">
         <div class="impact-number">2,000+</div>
+        <div class="blog-tag" style="margin-bottom:4px">Measured</div>
         <div class="impact-metric-title">Students and advisors each semester</div>
-        <div class="impact-metric-body">Degree Map became a recurring part of planning and advising across enrolled
-          programs.</div>
+        <div class="impact-metric-body">Platform usage activity across enrolled programs, tracked each semester.</div>
       </div>
       <div class="impact-metric">
-        <div class="impact-number">0</div>
-        <div class="impact-metric-title">Tutorial dependency</div>
-        <div class="impact-metric-body">After the core interaction failures were addressed, the tutorial and
-          instructions section were no longer needed for orientation.</div>
+        <div class="impact-number">~80%</div>
+        <div class="blog-tag" style="margin-bottom:4px">Measured</div>
+        <div class="impact-metric-title">Fewer bug reports after the redesign</div>
+        <div class="impact-metric-body">Version 1 shipped with a high bug-report volume; the revised interaction
+          model brought that down by roughly 80%.</div>
       </div>
       <div class="impact-metric">
-        <div class="impact-number">2+</div>
-        <div class="impact-metric-title">Departments requested access</div>
-        <div class="impact-metric-body">Within 3–4 months of the second version launching, additional departments
-          requested access without formal promotion.</div>
+        <div class="impact-number">3–4 mo</div>
+        <div class="blog-tag" style="margin-bottom:4px">Observed</div>
+        <div class="impact-metric-title">Until other departments asked for access</div>
+        <div class="impact-metric-body">Unprompted — no formal promotion, no rollout campaign. They asked because they'd seen it in use.</div>
       </div>
     </div>
   <!--  <div class="impact-cards">
@@ -1185,31 +1190,29 @@
           email required.</div>
       </div>
     </div>-->
-    <div class="body mt16">The most meaningful change was not a visual one. The product moved from asking students to
-      understand the system first to communicating the system through the interaction itself.</div>
+    <div class="body mt16">The most meaningful change wasn't visual — the product moved from asking students to
+      understand the system first to explaining itself. The shift from Save/Save As to auto-save meant students knew
+      what to do without being told, and the tutorial stopped being necessary.</div>
   </div>
 
   <div class="sec sec-purple">
     <div class="eyebrow eyebrow-purple">Reflection</div>
     <div class="sec-title">What I'd carry into the next product</div>
-    <div class="body">The redesign reinforced that long-term product exposure is valuable only when it changes the
-      questions you ask. The biggest lesson was to treat system logic, user behavior, and interface behavior as one
-      design problem.</div>
+    <div class="body">Long-term exposure only helps when it changes the questions you ask — treat system logic, user
+      behavior, and interface behavior as one design problem.</div>
     <div class="reflection-grid mt28">
       <div class="reflection-card">
         <div class="reflection-label">What Worked</div>
         <div class="reflection-items">
           <div class="reflection-item">
-            <div class="r-dot"></div>Turning recurring support and interaction failures into explicit design priorities
-            rather than isolated fixes.
+            <div class="r-dot"></div>Turning recurring support and interaction failures into explicit design
+            priorities, not isolated fixes.
           </div>
           <div class="reflection-item">
-            <div class="r-dot"></div>Making constraints visible at the moment they matter instead of explaining them
-            upfront.
+            <div class="r-dot"></div>Making constraints visible when they matter, not explaining them upfront.
           </div>
           <div class="reflection-item">
-            <div class="r-dot"></div>Designing accessibility into states and feedback rather than treating it as a
-            visual pass.
+            <div class="r-dot"></div>Designing accessibility into states and feedback, not as a visual pass.
           </div>
         </div>
       </div>
@@ -1217,16 +1220,13 @@
         <div class="reflection-label">What I'd Improve</div>
         <div class="reflection-items">
           <div class="reflection-item">
-            <div class="r-dot "></div>Model prerequisite validation logic alongside the layout earlier so system behavior
-            and UI decisions evolve together.
+            <div class="r-dot improve"></div>Model prerequisite logic alongside layout earlier, so both evolve together.
           </div>
           <div class="reflection-item">
-            <div class="r-dot "></div>Test lo-fi flows earlier with the full range of student digital literacy
-            represented in the product.
+            <div class="r-dot improve"></div>Test lo-fi flows earlier across the full range of student digital literacy.
           </div>
           <div class="reflection-item">
-            <div class="r-dot "></div>Treat onboarding as a day-one design problem rather than something to retrofit
-            after the core workflow.
+            <div class="r-dot improve"></div>Treat onboarding as a day-one problem, not something to retrofit later.
           </div>
         </div>
       </div>
@@ -1236,35 +1236,29 @@
   <div class="sec">
     <div class="eyebrow">Next Priorities</div>
     <div class="sec-title">Where the product could go next</div>
-    <div class="body">Three directions stand out based on the remaining user impact rather than a long feature backlog.
+    <div class="body">Three directions stand out, prioritized by remaining user impact, not a long feature backlog.
     </div>
     <div class="blog-grid">
       <div class="blog-card">
         <div class="blog-tag">Next</div>
         <div class="blog-title">Mobile experience</div>
-        <div class="blog-body">Extend the planning model to smaller screens with simplified semester cards and
-          interactions.</div>
+        <div class="blog-body">Simplified semester cards and interactions for smaller screens.</div>
       </div>
       <div class="blog-card">
         <div class="blog-tag">Next</div>
         <div class="blog-title">Advisor workflow</div>
-        <div class="blog-body">Give advisors a dedicated way to review multiple plans, comment, and flag conflicts.
+        <div class="blog-body">A dedicated way for advisors to review plans and flag conflicts.
         </div>
       </div>
       <div class="blog-card">
         <div class="blog-tag">Explore</div>
         <div class="blog-title">Proactive planning</div>
-        <div class="blog-body">Use the validated planning surface to surface patterns, warnings, and recommendations
-          rather than only reacting to input.</div>
+        <div class="blog-body">Surface patterns and warnings from the planning data, not just react to input.</div>
       </div>
     </div>
   </div>
 
   <div class="next-project" style="justify-content: flex-end;">
-   <!-- <a href="patient-monitoring.html">
-      <span class="prev-arrow">←</span>
-      <span>Patient Monitoring System Case Study</span>
-    </a>-->
     <a href="decision-hub.html">
       <span>Decision Intelligence Hub Case Study</span>
       <span class="next-arrow">→</span>
