@@ -265,22 +265,7 @@
   
   });
 
-  document.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
-  const toggle = dropdown.querySelector('.nav-link');
-
-  toggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const isOpen = dropdown.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', isOpen);
-  });
-});
-
-document.addEventListener('click', () => {
-  document.querySelectorAll('.nav-dropdown.is-open').forEach((d) => {
-    d.classList.remove('is-open');
-    d.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
-  });
-});
+  
   </script>
 <body class="home">
 
